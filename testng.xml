@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EmailTesting">
+  <test thread-count="5" name="testEmailSocial">
+  
+  <parameter name= "url" value = "https://gmail.com"/>
+  <parameter name = "emailID" value = "exampleEmailID" />
+  <parameter name = "pWord" value = "examplePassword" />
+  <parameter name = "subject" value = "Test Mail" />
+  <parameter name = "body" value = "Test Mail Body" />
+  
+  
+    <classes>
+      <class name="com.email.TestEmail"/>
+    </classes>
+  </test> <!-- testEmailSocial -->
+</suite> <!-- EmailTesting -->
